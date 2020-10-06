@@ -98,9 +98,12 @@
     "tslint-config-prettier": "^1.15.0",
     "tslint-config-standard": "^8.0.1",
     "typedoc": "^0.15.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.7.3"
   },
   "peerDependencies": {
     "rxjs": "6.x.x"
+  },
+  "dependencies": {
+    "fast-deep-equal": "^3.1.3"
   }
 }

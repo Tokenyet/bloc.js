@@ -1,9 +1,9 @@
 import { Observable, Subject, EMPTY, Subscription } from 'rxjs'
 import { catchError, concatMap, map } from 'rxjs/operators'
 import { BlocObserver, EventStreamClosedError, Transition } from '../bloc'
+import * as equal from 'fast-deep-equal'
 
 export type NextFunction<Event, State> = (value: Event) => Observable<Transition<Event, State>>
-
 /**
  *
  * Takes a stream of `Events` as input and transforms them into a Stream of `States` as output.
@@ -194,7 +194,8 @@ export abstract class Bloc<Event, State> extends Observable<State> {
         )
       })
     ).subscribe((transition: Transition<Event, State>) => {
-      if (transition.nextState === this.state && this.emitted) return
+      
+      if (equal(transition.nextState, this.state) && this.emitted) return
       try {
         this.onTransition(transition)
         this._state = transition.nextState

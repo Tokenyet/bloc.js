@@ -14,6 +14,21 @@
 
 ---
 
+## The Difference on this fork
+
+Use [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) to make state comparable, still worse than [Equatable](https://pub.dev/packages/equatable), but It's good for most cases.
+
+ex.
+```
+bloc.add(new SetCounterEvent(1));
+bloc.add(new SetCounterEvent(1));
+
+Will generate only one `CounterState`, because `yield new CounterState(1)` twice will be identitied and omitted.
+```
+
+See the detail in [test](test).
+
+
 A javascript library that helps implement the [BLoC pattern](https://www.didierboelens.com/2018/08/reactive-programming---streams---bloc).
 
 **Learn more at [bloclibrary.dev](https://bloclibrary.dev)!**
