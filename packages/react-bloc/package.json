@@ -1,6 +1,6 @@
 {
-  "name": "@felangel/react-bloc",
-  "version": "0.3.0",
+  "name": "@tokenyet/react-bloc",
+  "version": "0.3.1",
   "description": "React Components that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc.js state management package.",
   "keywords": [
     "react",
@@ -17,20 +17,21 @@
   "files": [
     "dist"
   ],
-  "author": "Felix Angelov <felangelov@gmail.com>",
+  "author": "Dowen <tokenyete@gmail.com>",
   "contributors": [
+    "Author: Felix Angelov <felangelov@gmail.com>",
     "Erick Torres <ericktorresdeveloper@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/felangel/bloc.js"
+    "url": "https://github.com/Tokenyet/bloc.js/tree/master/packages/react-bloc"
   },
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "lint": "tslint --project tsconfig.json -t codeFrame 'lib/src/**/*.tsx' 'test/**/*.tsx'",
@@ -119,7 +120,7 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "@felangel/bloc": "^0.3.0",
+    "@tokenyet/bloc": "^0.3.0",
     "react": "^16.9.0",
     "rxjs": "^6.5.2"
   }
