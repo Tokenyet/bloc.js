@@ -1,4 +1,4 @@
-import { Bloc } from '@felangel/bloc'
+import { Bloc } from '@tokenyet/bloc'
 import * as React from 'react'
 import { Subscription } from 'rxjs'
 

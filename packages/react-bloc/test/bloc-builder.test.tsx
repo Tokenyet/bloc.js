@@ -1,6 +1,6 @@
 import { BlocBuilder } from '../lib/react-bloc'
 import * as React from 'react'
-import { Bloc } from '@felangel/bloc'
+import { Bloc } from '@tokenyet/bloc'
 import { mount } from 'enzyme'
 import 'jsdom-global/register'
 
