@@ -1,7 +1,7 @@
 import { Observable, Subject, EMPTY, Subscription } from 'rxjs'
 import { catchError, concatMap, map } from 'rxjs/operators'
 import { BlocObserver, EventStreamClosedError, Transition } from '../bloc'
-import * as equal from 'fast-deep-equal'
+import equal from 'fast-deep-equal'
 
 export type NextFunction<Event, State> = (value: Event) => Observable<Transition<Event, State>>
 /**

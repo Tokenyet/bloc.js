@@ -1,6 +1,6 @@
 {
-  "name": "@felangel/bloc",
-  "version": "0.3.0",
+  "name": "@tokenyet/bloc",
+  "version": "0.3.1",
   "description": "A predictable state management library that helps implement the BLoC design pattern in JavaScript",
   "keywords": [
     "state-management",
@@ -14,10 +14,10 @@
   "files": [
     "dist"
   ],
-  "author": "Felix Angelov <felangelov@gmail.com>",
+  "author": "Dowen <tokenyete@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/felangel/bloc.js"
+    "url": "https://github.com/Tokenyet/bloc.js/tree/master/packages/bloc"
   },
   "license": "MIT",
   "engines": {
@@ -101,9 +101,7 @@
     "typescript": "^3.7.3"
   },
   "peerDependencies": {
-    "rxjs": "6.x.x"
-  },
-  "dependencies": {
+    "rxjs": "6.x.x",
     "fast-deep-equal": "^3.1.3"
   }
 }
